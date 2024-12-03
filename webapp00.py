@@ -34,3 +34,9 @@ agree = st.checkbox("Eu aceito")
 
 if agree:
     st.subheader("Eu te amo muito e para todo o sempre meu amor")
+
+st.write("Aqui estão algumas fotos especiais para você!")
+
+st.image("Foto1.jpg", caption="Essa é a primeira foto", use_column_width=True)
+st.image("foto2.jpg", caption="Lembranças incríveis!", use_column_width=True)
+st.image("foto3.jpg", caption="Momentos felizes juntos 💕", use_column_width=True)
