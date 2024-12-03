@@ -7,14 +7,18 @@ st.subheader("Eu te amo meu amor")
 
 st.write("Você é Lilian Maria da Silva?")
 
+# Opções de resposta
 resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 
+# Verificar a resposta inicial
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
     
+    # Adicionar entrada de data
     data = st.date_input("Insira uma data especial:")
 
+    # Verificar se a data é 7 de dezembro
     if data == datetime(2024, 12, 7).date():
         st.markdown(
             """
