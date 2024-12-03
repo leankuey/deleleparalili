@@ -5,8 +5,6 @@ st.header("Se você que esta lendo é Lilian Maria da Silva, esse site é para v
 
 st.subheader("Eu te amo meu amor")
 
-
-
 st.write("Você é Lilian Maria da Silva?")
 
 resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
@@ -16,3 +14,9 @@ if resposta == "Sim":
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
 elif resposta == "Não":
     st.markdown("## Vá embora! 😡")
+
+st.write("Você aceita me amar para todo o sempre?")
+agree = st.checkbox("Eu aceito")
+
+if agree:
+    st.write("Eu te amo muito e para todo o sempre meu amor")
