@@ -14,6 +14,7 @@ if resposta == "Sim":
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
 elif resposta == "Não":
     st.markdown("## Vá embora! 😡")
+    st.stop()
 
 st.write("Você aceita me amar para todo o sempre?")
 agree = st.checkbox("Eu aceito")
