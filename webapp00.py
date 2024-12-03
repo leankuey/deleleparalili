@@ -12,9 +12,9 @@ resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
+    
     data = st.date_input("Insira uma data especial:")
 
-    # Verificar se a data é 7 de dezembro
     if data == datetime(2024, 12, 7).date():
         st.markdown(
             """
@@ -27,9 +27,6 @@ if resposta == "Sim":
         )
     else:
         st.markdown("## Eu não ligo para essa data. 🙄")
-elif resposta == "Não":
-    st.markdown("## Vá embora! 😡")
-    st.stop()
 elif resposta == "Não":
     st.markdown("## Vá embora! 😡")
     st.stop()
