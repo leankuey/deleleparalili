@@ -3,22 +3,16 @@ st.title("Bem vinda")
 
 st.header("Se você que esta lendo é Lilian Maria da Silva, esse site é para você")
 
-st.subheader("Eu te amo meu amor")
+st.subheader("Você é Lilian Maria da Silva?")
 
-st.write("Você é Lilian Maria da Silva?")
-
-# Opções de resposta
 resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 
-# Verificar a resposta inicial
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
 
-    # Adicionar entrada de data
     data = st.date_input("Insira uma data especial:")
 
-    # Verificar se a data é 7 de dezembro
     if data.month == 12 and data.day == 7:
         st.markdown(
             """
