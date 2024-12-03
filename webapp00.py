@@ -12,6 +12,24 @@ resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
+    data = st.date_input("Insira uma data especial:")
+
+    # Verificar se a data é 7 de dezembro
+    if data == datetime(2024, 12, 7).date():
+        st.markdown(
+            """
+            ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
+            O dia que nasceu o ser mais perfeito nesse mundo: **o dia do seu nascimento**.  
+            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
+            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
+            **Obrigado por me salvar, me mudar e me amar.**
+            """
+        )
+    else:
+        st.markdown("## Eu não ligo para essa data. 🙄")
+elif resposta == "Não":
+    st.markdown("## Vá embora! 😡")
+    st.stop()
 elif resposta == "Não":
     st.markdown("## Vá embora! 😡")
     st.stop()
