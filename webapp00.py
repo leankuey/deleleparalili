@@ -33,4 +33,4 @@ st.write("Você aceita me amar para todo o sempre?")
 agree = st.checkbox("Eu aceito")
 
 if agree:
-    st.write("Eu te amo muito e para todo o sempre meu amor")
+    st.subheader("Eu te amo muito e para todo o sempre meu amor")
