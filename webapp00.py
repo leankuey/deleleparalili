@@ -1,7 +1,5 @@
 import streamlit as st
 
-imagens/
-
 st.title("Bem vinda")
 
 st.header("Se você que esta lendo é Lilian Maria da Silva, esse site é para você")
