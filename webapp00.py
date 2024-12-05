@@ -33,7 +33,7 @@ if resposta == "Sim":
 
                     """
                 )
-                 if st.button("Clique para ver a surpresa!"):
+             if st.button("Clique para ver a surpresa!"):
                     # Código para gerar confetes e balões
                     components.html("""
                         <html>
