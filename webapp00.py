@@ -32,13 +32,13 @@ if resposta == "Sim":
                     """
                 )
             else:
-                st.markdown("## Informações inválidas. O site será encerrado. 😢")
+                st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
         else:
-            st.markdown("## Informações inválidas. O site será encerrado. 😢")
+            st.markdown("## Por favor, coloque uma data especial 😢")
             st.stop()
     else:
-        st.markdown("## Informações inválidas. O site será encerrado. 😢")
+        st.markdown("## Por favor, coloque uma data especial 😢")
         st.stop()
 
     st.write("Você aceita me amar para todo o sempre?")
@@ -49,8 +49,6 @@ if resposta == "Sim":
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
-
-
 
 
 st.subheader("Agora algumas fotos especiais para mim")
