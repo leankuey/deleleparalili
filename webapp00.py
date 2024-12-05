@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
 st.title("Bem vinda")
 
@@ -32,29 +31,6 @@ if resposta == "Sim":
                     **Obrigado por tudo, meu amor!**
                     """
                 )
-                # Adiciona o botão para gerar confetes e balões
-                if st.button("Clique para ver a surpresa!"):
-                    # Código para gerar confetes e balões
-                    components.html("""
-                        <html>
-                            <head>
-                                <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.3/dist/index.bundle.js"></script>
-                                <style>
-                                    body { margin: 0; padding: 0; }
-                                    #confetti { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; }
-                                </style>
-                            </head>
-                            <body>
-                                <div id="confetti"></div>
-                                <script>
-                                    var confettiSettings = { target: 'confetti' };
-                                    var confetti = new ConfettiGenerator(confettiSettings);
-                                    confetti.render();
-                                </script>
-                            </body>
-                        </html>
-                    """, height=600)
-
             else:
                 st.markdown("## Informações inválidas. O site será encerrado. 😢")
                 st.stop()
