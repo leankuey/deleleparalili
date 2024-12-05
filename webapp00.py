@@ -32,9 +32,11 @@ if resposta == "Sim":
 
     st.markdown(
         """
-        ## Esse é um dia muito especial!  
-        Obrigado por escolher essa data. Aqui estão as mensagens que mostram o quanto você é importante para mim!  
-        **Eu te amo muito!** 💖
+        ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
+            O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
+            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
+            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
+            *Obrigado por me salvar, me mudar e me amar.
         """
     )
 else:
