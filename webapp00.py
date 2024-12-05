@@ -37,7 +37,7 @@ if resposta == "Sim":
                     # Reproduz a música usando HTML embed
                     components.html("""
     <iframe width="100%" height="80" 
-    src="https://youtu.be/kPa7bsKwL-c" 
+    src="https://drive.google.com/file/d/1V37R-cVW5UAzfPTCu44EvW19e7SMOK77/view?usp=drive_link" 
     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 """, height=100)
             else:
