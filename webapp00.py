@@ -10,44 +10,46 @@ resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
-
-    # Perguntar o dia
-    dia = st.number_input("Que dia gostaria de consultar?", min_value=1, max_value=31, step=1)
     
+    # Pergunta sobre o dia
+    dia = st.number_input("Que dia gostaria de consultar?", min_value=1, max_value=31, step=1)
+
     if dia == 7:
-        # Perguntar o mês
-        mes = st.selectbox("Qual mês?", list(range(1, 13)))
-        if mes != 12:
-            st.markdown("## Informação inválida! O site será encerrado. 😡")
-            st.stop()
-    elif dia == 12:
-        # Perguntar o ano
-        ano = st.number_input("Qual ano?", min_value=1900, max_value=2100, step=1)
-        if ano == 2000:
-            st.markdown("## Informação inválida! O site será encerrado. 😡")
+        # Pergunta sobre o mês
+        mes = st.number_input("Qual mês?", min_value=1, max_value=12, step=1)
+
+        if mes == 12:
+            # Pergunta sobre o ano
+            ano = st.number_input("Qual ano?", min_value=1900, step=1)
+
+            if ano > 2000:
+                st.markdown(
+                    """
+                    ## Esse é um dia muito especial!  
+                    O dia do seu nascimento, o dia que o mundo ficou mais lindo por sua causa.  
+                    Eu agradeço a Deus por ter você na minha vida.  
+                    **Obrigado por tudo, meu amor!**
+                    """
+                )
+            else:
+                st.markdown("## Informações inválidas. O site será encerrado. 😢")
+                st.stop()
+        else:
+            st.markdown("## Informações inválidas. O site será encerrado. 😢")
             st.stop()
     else:
-        st.markdown("## Informação inválida! O site será encerrado. 😡")
+        st.markdown("## Informações inválidas. O site será encerrado. 😢")
         st.stop()
 
-    st.markdown(
-        """
-        ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
-            O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
-            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
-            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
-            *Obrigado por me salvar, me mudar e me amar.
-        """
-    )
+    st.write("Você aceita me amar para todo o sempre?")
+    agree = st.checkbox("Eu aceito")
+
+    if agree:
+        st.subheader("Eu te amo muito e para todo o sempre meu amor 💖")
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
 
-st.write("Você aceita me amar para todo o sempre?")
-agree = st.checkbox("Eu aceito")
-
-if agree:
-    st.subheader("Eu te amo muito e para todo o sempre meu amor 💖")
 
 
 st.subheader("Agora algumas fotos especiais para mim")
