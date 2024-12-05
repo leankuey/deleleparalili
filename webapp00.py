@@ -25,10 +25,12 @@ if resposta == "Sim":
             if ano > 2000:
                 st.markdown(
                     """
-                    ## Esse é um dia muito especial!  
-                    O dia do seu nascimento, o dia que o mundo ficou mais lindo por sua causa.  
-                    Eu agradeço a Deus por ter você na minha vida.  
-                    **Obrigado por tudo, meu amor!**
+                   ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
+            O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
+            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
+            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
+            *Obrigado por me salvar, me mudar e me amar.*
+
                     """
                 )
             else:
