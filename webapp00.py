@@ -36,7 +36,7 @@ if resposta == "Sim":
                     # Reproduz a música usando HTML embed
                     components.html("""
     <iframe width="100%" height="80" 
-    src="https://youtu.be/kPa7bsKwL-c" 
+    src="https://open.spotify.com/intl-pt/track/2plbrEY59IikOBgBGLjaoe?si=112780f03161465e" 
     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 """, height=100)
             else:
