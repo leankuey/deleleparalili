@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+
 st.title("Bem vinda")
 
 st.header("Se você que está lendo é Lilian Maria da Silva, esse site é para você")
@@ -10,7 +11,7 @@ resposta = st.radio("Escolha uma opção:", ["Sim", "Não"])
 if resposta == "Sim":
     st.markdown("## Eu te amo, meu amor! 💕")
     st.write("Bem-vinda a esse site que eu fiz para você como presente, espero que goste!")
-    
+
     # Pergunta sobre o dia
     dia = st.number_input("Que dia gostaria de consultar?", min_value=1, max_value=31, step=1)
 
@@ -25,15 +26,14 @@ if resposta == "Sim":
             if ano > 2000:
                 st.markdown(
                     """
-                   ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
-            O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
-            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
-            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
-            *Obrigado por me salvar, me mudar e me amar.*
-
+                    ## Esse é um dia muito especial!  
+                    O dia do seu nascimento, o dia que o mundo ficou mais lindo por sua causa.  
+                    Eu agradeço a Deus por ter você na minha vida.  
+                    **Obrigado por tudo, meu amor!**
                     """
                 )
-             if st.button("Clique para ver a surpresa!"):
+                # Adiciona o botão para gerar confetes e balões
+                if st.button("Clique para ver a surpresa!"):
                     # Código para gerar confetes e balões
                     components.html("""
                         <html>
@@ -54,14 +54,15 @@ if resposta == "Sim":
                             </body>
                         </html>
                     """, height=600)
+
             else:
-                st.markdown("## Por favor, coloque uma data especial. 😢")
+                st.markdown("## Informações inválidas. O site será encerrado. 😢")
                 st.stop()
         else:
-            st.markdown("## Por favor, coloque uma data especial. 😢")
+            st.markdown("## Informações inválidas. O site será encerrado. 😢")
             st.stop()
     else:
-        st.markdown("## Por favor, coloque uma data especial. 😢")
+        st.markdown("## Informações inválidas. O site será encerrado. 😢")
         st.stop()
 
     st.write("Você aceita me amar para todo o sempre?")
@@ -72,6 +73,7 @@ if resposta == "Sim":
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
+
 
 
 
