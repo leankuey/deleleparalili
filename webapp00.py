@@ -36,7 +36,7 @@ if resposta == "Sim":
                     # Reproduz a música usando HTML embed
                     components.html("""
                         <audio autoplay controls style="width: 100%;">
-                            <source src="https://www.mboxdrive.com/Bruno%20Mars%20-%20Marry%20You.mp3" type="audio/mp3">
+                            <source src="https://youtu.be/kPa7bsKwL-c">
                             Seu navegador não suporta o elemento de áudio.
                         </audio>
                     """, height=80)
