@@ -35,11 +35,10 @@ if resposta == "Sim":
                 if st.button("Clique aqui para ouvir a música especial!"):
                     # Reproduz a música usando HTML embed
                     components.html("""
-                        <audio autoplay controls style="width: 100%;">
-                            <source src="https://youtu.be/kPa7bsKwL-c">
-                            Seu navegador não suporta o elemento de áudio.
-                        </audio>
-                    """, height=80)
+    <iframe width="100%" height="80" 
+    src="https://youtu.be/kPa7bsKwL-c" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+""", height=100)
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
