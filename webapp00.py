@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.title("Bem vinda")
 
@@ -31,6 +32,14 @@ if resposta == "Sim":
                     **Obrigado por tudo, meu amor!**
                     """
                 )
+                if st.button("Clique aqui para ouvir a música especial!"):
+                    # Reproduz a música usando HTML embed
+                    components.html("""
+                        <audio autoplay controls style="width: 100%;">
+                            <source src="https://www.mboxdrive.com/Bruno%20Mars%20-%20Marry%20You.mp3" type="audio/mp3">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    """, height=80)
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
