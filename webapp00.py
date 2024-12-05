@@ -34,7 +34,7 @@ if resposta == "Sim":
                     """
                 )
             else:
-                st.markdown("## Informações inválidas. O site será encerrado. 😢")
+                st.markdown("## Por favor, coloque um dia especial. 😢")
                 st.stop()
         else:
             st.markdown("## Informações inválidas. O site será encerrado. 😢")
