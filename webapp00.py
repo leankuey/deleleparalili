@@ -37,7 +37,7 @@ if resposta == "Sim":
                 if st.button("Clique nesse botão e você vai entender o porque eu estava ouvindo essa musica"):
                     music_url = "https://www.dropbox.com/scl/fi/xt9jar73skco791xekblp/Lady-Gaga-Bruno-Mars-Die-With-A-Smile-Official-Music-Video.mp3?rlkey=c9ur1emis0innm6kmw2rww53b&st=yrhatm50&dl=1"
                     st.audio(music_url)
-                    st.subheader("eu ja gostava bastante dessa musica, e depois que eu li a letra dela pensei OMG NOZES. Essa musica parece q foi eu q escrevi para você, com você eu morreria com um sorriso."
+                    st.subheader("eu ja gostava bastante dessa musica, e depois que eu li a letra dela pensei OMG NOZES. Essa musica parece q foi eu q escrevi para você, com você eu morreria com um sorriso.")
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
