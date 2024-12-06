@@ -34,12 +34,14 @@ if resposta == "Sim":
                     """
                 )
                 if st.button("Clique aqui para ouvir a música especial!"):
-                    # Reproduz a música usando HTML embed
-                    components.html("""
-    <iframe width="100%" height="80" 
-    src="https://drive.google.com/file/d/1V37R-cVW5UAzfPTCu44EvW19e7SMOK77/view?usp=drive_link" 
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-""", height=100)
+                    # Reproduz a música local usando HTML embed
+                    music_file_path = "musica.mp3"  # Substitua pelo nome do seu arquivo
+                    components.html(f"""
+                        <audio autoplay controls style="width: 100%;">
+                            <source src="{Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video)}" type="audio/mp3">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                    """, height=80)
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
