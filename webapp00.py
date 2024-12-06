@@ -34,14 +34,9 @@ if resposta == "Sim":
                     """
                 )
                 if st.button("Clique aqui para ouvir a música especial!"):
-                    # Reproduz a música local usando HTML embed
-                    music_file_path = "musica.mp3"  # Substitua pelo nome do seu arquivo
-                    components.html(f"""
-                        <audio autoplay controls style="width: 100%;">
-                            <source src="{Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video)}" type="audio/mp3">
-                            Seu navegador não suporta o elemento de áudio.
-                        </audio>
-                    """, height=80)
+                    # Usa st.audio para reproduzir o arquivo local
+                    with open("musica.mp3", "rb") as file:
+                        st.audio(file, format="audio/mp3")
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
