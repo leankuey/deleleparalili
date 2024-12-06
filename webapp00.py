@@ -26,13 +26,16 @@ if resposta == "Sim":
                 st.markdown(
                     """
                     ## Meu amor, esse é um dia muito especial para o homem misterioso que criou esse site.  
-            O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
-            Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
-            O presente quem está dando sou eu, mas como uma forma de te agradecer.  
-            *Obrigado por me salvar, me mudar e me amar.*
+                    O dia que nasceu o ser mais perfeito nesse mundo: *o dia do seu nascimento*.  
+                    Eu agradeço muito a Deus por ter você na minha vida e por ter seu amor para mim.  
+                    O presente quem está dando sou eu, mas como uma forma de te agradecer.  
+                    *Obrigado por me salvar, me mudar e me amar.*
                     """
                 )
+                
+                # Botão para tocar a música
                 if st.button("Clique aqui para ouvir a música especial!"):
+                    # Link para o Google Drive com a música, modificado para ser um link direto
                     music_url = "https://drive.google.com/uc?export=download&id=1V37R-cVW5UAzfPTCu44EvW19e7SMOK77"
                     st.audio(music_url)
             else:
@@ -49,7 +52,7 @@ if resposta == "Sim":
     agree = st.checkbox("Eu aceito")
 
     if agree:
-        st.subheader("Eu te amo muito e para todo o sempre meu amor 💖")
+        st.subheader("Eu te amo muito e para todo o sempre, meu amor 💖")
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
