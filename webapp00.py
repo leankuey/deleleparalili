@@ -35,7 +35,7 @@ if resposta == "Sim":
                 )
                 if st.button("Clique aqui para ouvir a música especial!"):
                     # Usa st.audio para reproduzir o arquivo local
-                    with open("DieWithASmile.mp3", "rb") as file:
+                    with open("die_with_a_smile.mp3", "rb") as file:
                         st.audio(file, format="audio/mp3")
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
