@@ -32,12 +32,12 @@ if resposta == "Sim":
                     *Obrigado por me salvar, me mudar e me amar.*
                     """
                 )
-                
+
                 # Botão para tocar a música
                 if st.button("Clique aqui para ouvir a música especial!"):
-                    # Link para o Google Drive com a música, modificado para ser um link direto
-                    music_url = "https://drive.google.com/uc?export=download&id=1V37R-cVW5UAzfPTCu44EvW19e7SMOK77"
-                    st.audio(music_url)
+                    # Link do SoundCloud
+                    music_url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293337377&color=%2300FF00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"
+                    st.markdown(f'<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{music_url}"></iframe>', unsafe_allow_html=True)
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
@@ -56,6 +56,7 @@ if resposta == "Sim":
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
+
 
 
 st.subheader("Agora algumas fotos especiais para mim")
