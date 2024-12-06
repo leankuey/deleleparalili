@@ -34,7 +34,7 @@ if resposta == "Sim":
                 )
                 if st.button("Clique aqui para ouvir a música especial!"):
                     # Usa st.audio para reproduzir o arquivo local
-                   https://drive.google.com/uc?export=download&id=1V37R-cVW5UAzfPTCu44EvW19e7SMOK77/view?usp=drive_link
+                   https://drive.google.com/uc?export=download&id=1V37R-cVW5UAzfPTCu44EvW19e7SMOK77
             else:
                 st.markdown("## Por favor, coloque uma data especial 😢")
                 st.stop()
