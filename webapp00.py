@@ -44,6 +44,26 @@ if resposta == "Sim":
         else:
             st.markdown("## Por favor, coloque uma data especial 😢")
             st.stop()
+    elif dia == 14:
+        mes = st.number_input("Qual mês?", min_value=1, max_value=12, step=1)
+
+        if mes == 12:
+            ano = st.number_input("Qual ano?", min_value=2019, max_value=2023, step=1)
+
+            if 2019 <= ano <= 2023:
+                st.markdown(
+                    """
+                    ## Essa é a data do nosso aniversário de namoro, minha princesa.  
+                    Nesse dia, em 2019, minha vida mudaria e eu nunca conseguiria imaginar o quanto.  
+                    Eu te amo demais, meu amor, e sou muito grato por você me amar também.
+                    """
+                )
+            else:
+                st.markdown("## Por favor, coloque uma data especial 😢")
+                st.stop()
+        else:
+            st.markdown("## Por favor, coloque uma data especial 😢")
+            st.stop()
     else:
         st.markdown("## Por favor, coloque uma data especial 😢")
         st.stop()
@@ -56,7 +76,6 @@ if resposta == "Sim":
 else:
     st.markdown("## Vá embora! 😡")
     st.stop()
-
 
 st.subheader("Agora algumas fotos especiais para mim")
 
