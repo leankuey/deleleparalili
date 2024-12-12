@@ -48,7 +48,7 @@ if resposta == "Sim":
         mes = st.number_input("Qual mês?", min_value=1, max_value=12, step=1)
 
         if mes == 12:
-            ano = st.number_input("Qual ano?", min_value=2019, step=1)
+            ano = st.number_input("Qual ano?", min_value=2000, step=1)
 
             if 2019 <= ano <= 2023:
                 st.markdown(
