@@ -38,15 +38,40 @@ if resposta == "Sim":
                     music_url = "https://www.dropbox.com/scl/fi/xt9jar73skco791xekblp/Lady-Gaga-Bruno-Mars-Die-With-A-Smile-Official-Music-Video.mp3?rlkey=c9ur1emis0innm6kmw2rww53b&st=yrhatm50&dl=1"
                     st.audio(music_url)
                     st.subheader("eu ja gostava bastante dessa musica, e depois que eu li a letra dela pensei OMG NOZES. Essa musica parece q foi eu q escrevi para você, com você eu morreria com um sorriso.")
-                        st.write("Você aceita me amar para todo o sempre?")
-    agree = st.checkbox("Eu aceito")
+            else:
+                st.markdown("## Por favor, coloque uma data especial 😢")
+                st.stop()
+        else:
+            st.markdown("## Por favor, coloque uma data especial 😢")
+            st.stop()
+    elif dia == 14:
+        mes = st.number_input("Qual mês?", min_value=1, max_value=12, step=1)
 
-    if agree:
-        st.subheader("Eu te amo muito e para todo o sempre, meu amor 💖")
-else:
-    st.markdown("## Vá embora! 😡")
-    st.stop()
+        if mes == 12:
+            ano = st.number_input("Qual ano?", min_value=2019, step=1)
 
+            if 2019 <= ano <= 2023:
+                st.markdown(
+                    """
+                    ## Essa é a data do nosso aniversário de namoro, minha princesa.  
+                    Nesse dia, em 2019, minha vida mudaria e eu nunca conseguiria imaginar o quanto.  
+                    Eu te amo demais, meu amor, e sou muito grato por você me amar também.
+                    """
+                )
+            elif ano == 2024:
+                st.markdown(
+                    """
+                    ## Você acabou de colocar uma data mais que especial, meu amor.  
+                    Quem diria que essa paquerinha nossa viraria 5 anos (eu diria).  
+                    Já estamos há tanto tempo juntos, minha gatinha. Você me viu crescer, me tornar um homem, e aproveitou pra me moldar do jeito que você queria.  
+                    Hoje eu sei que estamos mais próximos do que nunca daquilo que sempre almejamos.  
+                    Em breve eu te pedirei em casamento e depois só faltará morarmos juntos.  
+                    Já fazem tantos anos que quero morar com você, meu amor. Obrigada por tudo, por ser uma mulher maravilhosa e perfeita, por sempre se arrumar linda pra me ver, por me deixar dormir até mais tarde mesmo ficando menos tempo comigo.  
+                    O amor está nesses pequenos gestos e eu posso dizer: Você me ama MUITO.  
+                    Feliz aniversário de namoro, minha gatinha. Venha ao meu encontro que, além de receber seu all star, será recebida com muito amor e carinho.
+                    """
+                )
+      
 st.subheader("Agora algumas fotos especiais para mim")
 
 # Exibir fotos da subpasta
